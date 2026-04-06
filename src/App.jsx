@@ -122,29 +122,32 @@ export default function Portfolio() {
 
 
   const projects = [
+
+   {
+      title: "BookStore App",
+      description: "The Bookstore App is a user-friendly platform designed to make browsing, purchasing, and managing books effortless. Whether you're a casual reader, a student, or an avid book collector, this app offers a seamless experience to explore a wide variety of books across multiple genres..",
+      tech: [,"Mongodb","React", "Tailwind CSS",'Authentication & Authorization','CRUD Operation'],
+      image: "https://media.istockphoto.com/id/963186372/vector/flat-design-concept-online-books-store-hand-pick-book-from-internet-device-vector-illustrate.jpg?s=612x612&w=0&k=20&c=Actp37AZcbCtQm_mnFhpwBIYoHrYzrRMbY8iFFMjLIQ=",
+      live: "https://bookstore-jade-omega.vercel.app/",
+      features: ['Secure Purchase',' Categories & Recommendations',' Reviews & Ratings', 'Secure Purchase']
+    },
+
     {
-      title: "Bright Futures for Every Child.",
-      description: "EduInclude provides a safe and supportive learning environment where every child can grow at their own pace.Our modern teaching methods and activity-based classes help students build confidence, creativity, and discipline.",
+      title: "EduAccess.",
+      description: "EduInclude provides a safe and supportive learning environment where every child can grow at their own pace. Our modern teaching methods and activity-based classes help students build confidence, creativity, and discipline.",
       tech: ["Html", "Css","Javascript"],
-      image: "https://t4.ftcdn.net/jpg/00/78/76/81/360_F_78768185_wfkQjxmgIioU9sJsd6hChu5WVkkgAPFx.jpg",
-      live : "https://692eb93a31a1417171cd4b94--eduinclude.netlify.app/",
+      image: "https://i.fbcd.co/products/resized/resized-750-500/2108-m40-i410-n015-s-c15-disab-mainpreview-9c794f525bea2b1bc125aed1d100bfeb9316a82cba686f510b394ec5b1484ac0.jpg",
+      live : "https://eduinclude.vercel.app/",
       features: ["Safe & Supportive Environment", "Modern Teaching Methods", 'Personalized Attention', 'Focus on Confidenc',]
     },
+
     {
-      title: "Agency Web Application",
-      description: "Modern agency website with interactive components and smooth animations. Built with React and Tailwind CSS for optimal performance.",
+      title: "Cars-Premium",
+      description: "Experience the perfect blend of luxury, performance, and cutting-edge technology with our premium cars. Designed for comfort and built for excellence..",
       tech: ["React", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-      live: "https://agency-ai-gamma.vercel.app/",
-      features: ["advertising",' content marketing',' content writing', 'social media management']
-    },
-    {
-      title: "Holiday Web Application",
-      description: "Holiday Bazar is a modern travel-booking portal crafted for both domestic and international adventure seekers. Featuring immersive hero-slides and intuitive navigation, the platform allows users to explore regions by country, holiday-type and tour-package..",
-      tech: ["React", "Tailwind CSS"],
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS84IVZ5wmr1AmnYzqley-CA52ikLjYLvuLg&s",
-      live: "https://holiday-web-zbat.vercel.app/",
-      features: ["Homestays", "Gallery", "Hotel booking", "Flight booking"]
+      image: "https://static.vecteezy.com/system/resources/thumbnails/027/788/270/small/sports-car-performing-burnout-or-drifting-on-racing-track-with-smoke-and-heat-ai-generative-photo.jpg",
+      live: "https://cars-premium.vercel.app/",
+      features: ["Advanced Technology", "Powerful Engine", "Luxury Interior", "Safety Features"]
     }
   ];
 
