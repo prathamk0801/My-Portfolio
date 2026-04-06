@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Smartphone, Moon, Sun, Download, Menu, X, Award, Briefcase, Users, Coffee, Clock, TrendingUp, CheckCircle, Star, MessageSquare, BookOpen, Target, Zap, Heart } from 'lucide-react';
 
+
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
@@ -111,14 +112,13 @@ export default function Portfolio() {
 
 
  const downloadResume = () => {
-  const pdfUrl = '/Pratham Resume.pdf'; // correct path from public
+  const pdfUrl = '/Pratham%20Resume.pdf'; // encode the space
   const link = document.createElement('a');
   link.href = pdfUrl;
-  link.setAttribute('download', 'Pratham Resume.pdf'); // ensures download
+  link.setAttribute('download', 'Pratham Resume.pdf'); // forces download
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-};cument.body.removeChild(link);
 };
 
 
@@ -351,14 +351,14 @@ export default function Portfolio() {
                   {item.name}
                 </button>
               ))}
-              <button
-                onClick={downloadResume}
-                className="w-full mt-2 mx-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold flex items-center justify-center"
-                style={{ width: 'calc(100% - 2rem)' }}
-              >
-                <Download size={18} className="mr-2" />
-                Download Resume
-              </button>
+                <button
+                  onClick={downloadResume}
+                  className="w-full mt-2 mx-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold flex items-center justify-center"
+                  style={{ width: 'calc(100% - 2rem)' }}
+                >
+                  <Download size={18} className="mr-2" />
+                  Download Resume
+                </button>
             </div>
           )}
         </div>
