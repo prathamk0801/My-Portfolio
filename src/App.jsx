@@ -111,10 +111,10 @@ export default function Portfolio() {
 
 
   const downloadResume = () => {
-  const pdfUrl = '/Pratham Resume(2).pdf'; // Make sure the PDF is in your public folder
+  const pdfUrl = '/Pratham Resume.pdf'; // Make sure the PDF is in your public folder
   const link = document.createElement('a');
   link.href = pdfUrl;
-  link.download = 'Pratham_Kumar_FullStack_Developer_Resume.pdf';
+  link.download = 'Pratham_Resume.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
