@@ -111,16 +111,39 @@ export default function Portfolio() {
 }, [darkMode]);
 
 
- const downloadResume = () => {
-  const pdfUrl = '/Pratham%20Resume.pdf'; // encode the space
-  const link = document.createElement('a');
-  link.href = pdfUrl;
-  link.setAttribute('download', 'Pratham Resume.pdf'); // forces download
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+//  const downloadResume = () => {
+//   const pdfUrl = '/Pratham%20Resume.pdf'; // encode the space
+//   const link = document.createElement('a');
+//   link.href = pdfUrl;
+//   link.setAttribute('download', 'Pratham Resume.pdf'); // forces download
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// };
 
+const downloadResume = async () => {
+  const pdfUrl = '/Pratham%20Resume.pdf'; // your file in public folder
+  try {
+    const response = await fetch(pdfUrl);
+    if (!response.ok) throw new Error('Network response was not ok');
+
+    const blob = await response.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = blobUrl;
+    link.download = 'Pratham Resume.pdf'; // filename
+    document.body.appendChild(link);
+    link.click();
+
+    // Cleanup
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(blobUrl);
+  } catch (error) {
+    console.error('Download failed:', error);
+    alert('Failed to download resume. Please try again.');
+  }
+};
 
   const projects = [
 
