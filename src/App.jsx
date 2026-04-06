@@ -114,7 +114,7 @@ export default function Portfolio() {
   const pdfUrl = '/Pratham Resume.pdf'; // Make sure the PDF is in your public folder
   const link = document.createElement('a');
   link.href = pdfUrl;
-  link.download = 'Pratham_Resume.pdf';
+  link.download = 'Pratham Resume.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
