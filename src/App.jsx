@@ -110,14 +110,15 @@ export default function Portfolio() {
 }, [darkMode]);
 
 
-  const downloadResume = () => {
-  const pdfUrl = '/Pratham Resume.pdf'; // Make sure the PDF is in your public folder
+ const downloadResume = () => {
+  const pdfUrl = '/Pratham Resume.pdf'; // correct path from public
   const link = document.createElement('a');
   link.href = pdfUrl;
-  link.download = 'Pratham Resume.pdf';
+  link.setAttribute('download', 'Pratham Resume.pdf'); // ensures download
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+};cument.body.removeChild(link);
 };
 
 
