@@ -111,7 +111,7 @@ export default function Portfolio() {
 
 
   const downloadResume = () => {
-  const pdfUrl = '/Pratham Resume.pdf'; // Make sure the PDF is in your public folder
+  const pdfUrl = '/Pratham Resume(2).pdf'; // Make sure the PDF is in your public folder
   const link = document.createElement('a');
   link.href = pdfUrl;
   link.download = 'Pratham_Kumar_FullStack_Developer_Resume.pdf';
@@ -126,7 +126,7 @@ export default function Portfolio() {
    {
       title: "BookStore App",
       description: "The Bookstore App is a user-friendly platform designed to make browsing, purchasing, and managing books effortless. Whether you're a casual reader, a student, or an avid book collector, this app offers a seamless experience to explore a wide variety of books across multiple genres..",
-      tech: [,"Mongodb","React", "Tailwind CSS",'Authentication & Authorization','CRUD Operation'],
+      tech: ["Mongodb","React", "Tailwind CSS",'Authentication & Authorization','CRUD Operation'],
       image: "https://media.istockphoto.com/id/963186372/vector/flat-design-concept-online-books-store-hand-pick-book-from-internet-device-vector-illustrate.jpg?s=612x612&w=0&k=20&c=Actp37AZcbCtQm_mnFhpwBIYoHrYzrRMbY8iFFMjLIQ=",
       live: "https://bookstore-jade-omega.vercel.app/",
       features: ['Secure Purchase',' Categories & Recommendations',' Reviews & Ratings', 'Secure Purchase']
